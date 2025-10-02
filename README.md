@@ -29,3 +29,6 @@ Some sample commands below.
 
 ## kubectl delete replication controller
 `kubectl delete rc <relication-controller-name>`
+
+## kubectl get replicaset
+kubectl get replicaset
