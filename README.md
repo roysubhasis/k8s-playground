@@ -30,5 +30,21 @@ Some sample commands below.
 ## kubectl delete replication controller
 `kubectl delete rc <relication-controller-name>`
 
-## kubectl get replicaset
-kubectl get replicaset
+# Replica Set Commands
+
+## create replicaset
+`kubectl create -f replicaset-definition.yml` 
+
+## get list of replicaset created
+`kubectl get replicaset`
+
+## delete replicaset by name
+`kubectl delete replicaset myapp-replicaset`
+
+## update replicaset
+`kubectl replace -f replicaset-definition.yml`
+
+## scale number of relicaset
+`kubectl scale --replicas=<no of replica> -f replicaset-definition.yml`
+
+`kubectl scale --replicas=<no of replica> replicaset myapp-replicaset`
